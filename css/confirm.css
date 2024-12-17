@@ -1,0 +1,151 @@
+body{
+    margin-right: auto;
+    margin-left: auto;
+    padding:0;
+    width: 700px;
+    font-size: 13px;
+    color: rgba(0,0, 0, 0.7);
+    font-family: 'メイリオ', Meiryo, sans-serif;
+    text-align:center;
+       
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+img {
+    border: none;
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/*ナビゲーションのバー*/
+nav ul {
+    display: flex;  /* Flexbox を使って要素を横並びに配置 */
+    justify-content: space-evenly; /* アイテムを均等に配置 */
+    align-items: center;/* アイテムを垂直方向に中央揃え */
+    padding: 5px;
+    list-style-type: none; /* 不要な余白を削除 */
+    margin: 0; /* ナビゲーションバーの外部の余白を削除 */
+}
+nav ul li {
+    display: inline-block; /* 各リストアイテムをブロック表示にしてインラインで並べる */
+}
+
+nav ul li img {
+    width: 40px;
+    height: auto; /* 高さは自動調整 */
+    object-fit: contain; /* 画像が歪まないようにする */
+}
+
+.preview img {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#preview img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /*丸くする*/
+    object-fit: cover; /*画像の切り取り時の比率を保つ*/
+    margin-bottom: 10px; /*下にスペースを追加*/  
+}
+
+input[type="file"]{
+    margin-top: 10px; /*プレビュー画像とのスペースを追加*/
+}
+
+
+.profile-item.type-table > div {
+    height: 80px;
+    display: flex; /* 横並びにする */
+    align-items: center; /* 縦方向に中央揃え */
+}
+
+.narrow-cell {
+    flex: 10px; /* ラベル部分の幅を固定 */
+    text-align: left;
+
+}
+
+.form-select-cell select {
+    width: 150px;
+    text-align: left;
+
+}
+
+label {
+    margin-right: 10px; /* ラベルとセレクトボックスの間にスペースを追加 */
+    white-space: nowrap; /* ラベルが改行しないように */
+}
+
+select {
+    min-width: 120px; /* セレクトボックスに最小幅を設定 */
+}
+
+
+main{
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+
+.count{
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+}
+
+a{
+    display: block; /* リンクをブロック要素にして全体をクリック可能に */
+    padding: 50px;
+    background-color: #f0f0f0; /* 背景色を追加 */
+    text-decoration: none; /* デフォルトの下線を消す */
+}
+
+
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* 親要素の色を継承 */
+  }
+  
+a:visited {
+    color: inherit; /* 訪問後も色が変わらない */
+  }
+  
+a:hover {
+    color: inherit; /* ホバー時にも色が変わらない */
+  }
+  
+a:active {
+    color: inherit; /* クリック中の状態でも色が変わらない */
+  }

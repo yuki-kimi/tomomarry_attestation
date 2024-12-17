@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="heading">新規登録</h1>
+      <div id="message" class="text-red-700 mb-4"></div>
+
+      <div class="form-field">
+        <input
+          type="email"
+          id="signup-email"
+          placeholder="Email"
+          class="input w-full input-bordered"
+        />
+      </div>
+      <div class="form-field">
+        <input
+          type="password"
+          id="signup-password"
+          placeholder="Password"
+          class="input w-full input-bordered"
+        />
+      </div>
+      <div class="text-center button-field">
+        <button id="signup-button" class="btn btn-primary btn-wide">
+          サインアップ
+        </button>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

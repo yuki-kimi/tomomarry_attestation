@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1 class="heading">新規登録</h1>
+
+    <!-- Facebook ログインボタン -->
+    <div>
+      <button id="facebook-login-button" class="btn btn-primary btn-wide">
+        Facebookでログイン
+      </button>
+    </div>
+
+    <div>
+      <button id="cancel" class="btn btn-outline btn-wide" onclick="window.location.href='/authentication.html'">キャンセル</button>
+    </div>
+
+    <div id="message"></div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/facebook.js"></script>
+  </body>
+</html>

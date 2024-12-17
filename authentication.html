@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新規登録</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="message" class="mb-4 text-center"></div>
+
+      <div class="text-center">
+        <div class="Email">
+         <button id="EmailLogin" onclick="window.location.href='/email.html'">メールアドレスで新規登録</button>
+        </div>
+        <div class="phone_number">
+         <button id="phone_numberlLogin" onclick="singInWithEmail()">電話番号で新規登録</button>
+        </div>
+        <div class="facebook">
+         <button id="facebookLogin" onclick="window.location.href='/facebook.html'">Facebookで新規登録</button>
+        </div>
+        <div clas="apple">
+         <button id="appleLogin" onclick="signInWithApple()">Appleでログイン</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

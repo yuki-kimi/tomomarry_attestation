@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>自己紹介の編集</title>
+  <link rel="stylesheet" href="css/confirm.css">
+  <!--編集画面-->
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><img src="img/サーチアイコン.png" alt="さがす"/></li>
+        <li><img src="img/いいねアイコン.png" alt="いいね"/></li>
+        <li><img src="img/コメントアイコン7.png" alt="コメント"/></li>
+        <li><img src="img/履歴書アイコン6.png" alt="プロフィール"></li>
+      </ul>
+    </nav>
+   </header>
+  
+  <!--プロフィール画像-->
+  <div class="profile img">
+    <div id="preview"></div> <!--プロフィール画像を追加-->
+    <input type="file" id="example" multiple>
+  </div>
+  
+  <!--自己紹介文-->
+  <div class="profile text"> 
+   <h1>自己紹介文</h1>
+   <a href="./input.html">
+    <div id="profile_text"></div>
+   </a> 
+  </div>
+
+  <!--基本情報-->
+  <div class="profile contents">
+  <h2>基本情報</h2>
+  <ul class="profile-edit lists">
+    <div class="profile-item type-table" id="nickname">
+      <div>
+        <div class="narrow-cell">
+          <label class="profile nickname">ニックネーム
+          </label>
+        </div>
+        <div class="form"></div>
+      </div>
+    </div>
+    <div class="profile-item type-table">
+      <div>
+        <div class="narrow-cell">
+      <label for="profile age">年齢</label>
+     </div>
+    </div>
+    </div>
+    <div>
+     <div class="form"></div>
+    </div>
+    <div class="profile-item type-table">
+      <div>
+        <div class="narrow-cell">
+          <label for="profile blood">血液型</label>
+        </div>
+        <div class="form-select-cell">
+          <select data-js="submit" name="profile blood" id="profile blood" class="blank">
+           <option selected="selected"> <value="0">未設定</option> 
+           <option value="1">A型</option> 
+           <option value="2">B型</option> 
+           <option value="3">C型</option> 
+           <option value="4">AB型</option> 
+           <option value="5">分からない</option> 
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="profile-item type-table">
+      <div>
+        <div class="narrow-cell">
+          <label for="profile address">住居地</label>
+        </div>
+        <div class="form-select-cell">
+          <select data-js="submit" name="profile address" id="profile address">
+            <option selected="selected"> <value="0">未設定</option>
+            <option value="13">東京都</option>
+<option value="14">神奈川県</option> 
+<option value="11">埼玉県</option>
+<option value="12">千葉県</option>
+<option value="27">大阪府</option>
+<option value="26">京都府</option>
+<option value="23">愛知県</option>
+<option value="40">福岡県</option>
+<option value="28">兵庫県</option>
+<option value="8">茨城県</option>
+<option value="9">栃木県</option>
+<option value="1">北海道</option>
+<option value="2">青森県</option>
+<option value="3">岩手県</option>
+<option value="4">宮城県</option>
+<option value="5">秋田県</option>
+<option value="6">山形県</option>
+<option value="7">福島県</option>
+<option value="10">群馬県</option>
+<option value="15">新潟県</option>
+<option value="16">富山県</option>
+<option value="17">石川県</option>
+<option value="18">福井県</option>
+<option value="19">山梨県</option>
+<option value="20">長野県</option>
+<option value="21">岐阜県</option>
+<option value="22">静岡県</option>
+<option value="24">三重県</option>
+<option value="25">滋賀県</option>
+<option value="29">奈良県</option>
+<option value="30">和歌山県</option>
+<option value="31">鳥取県</option>
+<option value="32">島根県</option>
+<option value="33">岡山県</option>
+<option value="34">広島県</option>
+<option value="35">山口県</option>
+<option value="36">徳島県</option>
+<option value="37">香川県</option>
+<option value="38">愛媛県</option>
+<option value="39">高知県</option>
+<option value="41">佐賀県</option>
+<option value="42">長崎県</option>
+<option value="43">熊本県</option>
+<option value="44">大分県</option>
+<option value="45">宮崎県</option>
+<option value="46">鹿児島県</option>
+<option value="47">沖縄県</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="profile-item type-table">
+      <div>
+        <div class="narrow-cell">
+          <label for="profile work location">勤務地</label>
+        </div>
+        <div class="form-select-cell">
+          <select data-js="submit" name="profile address" id="profile work location">
+            <option selected="selected"> <value="0">未設定</option>
+            <option value="13">東京都</option>
+<option value="14">神奈川県</option> 
+<option value="11">埼玉県</option>
+<option value="12">千葉県</option>
+<option value="27">大阪府</option>
+<option value="26">京都府</option>
+<option value="23">愛知県</option>
+<option value="40">福岡県</option>
+<option value="28">兵庫県</option>
+<option value="8">茨城県</option>
+<option value="9">栃木県</option>
+<option value="1">北海道</option>
+<option value="2">青森県</option>
+<option value="3">岩手県</option>
+<option value="4">宮城県</option>
+<option value="5">秋田県</option>
+<option value="6">山形県</option>
+<option value="7">福島県</option>
+<option value="10">群馬県</option>
+<option value="15">新潟県</option>
+<option value="16">富山県</option>
+<option value="17">石川県</option>
+<option value="18">福井県</option>
+<option value="19">山梨県</option>
+<option value="20">長野県</option>
+<option value="21">岐阜県</option>
+<option value="22">静岡県</option>
+<option value="24">三重県</option>
+<option value="25">滋賀県</option>
+<option value="29">奈良県</option>
+<option value="30">和歌山県</option>
+<option value="31">鳥取県</option>
+<option value="32">島根県</option>
+<option value="33">岡山県</option>
+<option value="34">広島県</option>
+<option value="35">山口県</option>
+<option value="36">徳島県</option>
+<option value="37">香川県</option>
+<option value="38">愛媛県</option>
+<option value="39">高知県</option>
+<option value="41">佐賀県</option>
+<option value="42">長崎県</option>
+<option value="43">熊本県</option>
+<option value="44">大分県</option>
+<option value="45">宮崎県</option>
+<option value="46">鹿児島県</option>
+<option value="47">沖縄県</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="profile-item type-table">
+      <div>
+        <div class="narrow-cell">
+          <label for="profile nth child">兄弟姉妹</label>
+        </div>
+         <div class="form-select-cell">
+         <select data-js="submit" name="profile nth child" id="profile nth child" class="is-blank">
+           <option selected="selected"> <value="0">未設定</option>
+           <option value="1">長男/長女</option>
+           <option value="2">次男/次女</option>
+           <option value="3">三男/三男</option>
+           <option value="4">一人っ子</option>
+           <option value="5">その他</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="profile-item type-table">
+      <div>
+        <div class="narrow-cell">
+          <label for="profile height">身長</label>
+        </div>
+         <div class="form-select-cell">
+         <select data-js="submit" name="profile height" id="profile height" class="is-blank">
+           <option value="0">未設定</option>
+           <option value="150">150cm以下</option>
+           <option value="151">151cm</option>
+           <option value="152">152cm</option>
+           <option value="153">153cm</option>
+           <option value="154">154cm</option>
+           <option value="155">155cm</option>
+           <option value="156">156cm</option>
+           <option value="157">157cm</option>
+           <option value="158">158cm</option>
+           <option value="159">159cm</option>
+           <option value="160">160cm</option>
+           <option value="161">161cm</option>
+           <option value="162">162cm</option>
+           <option value="163">163cm</option>
+           <option value="164">164cm</option>
+           <option value="165">165cm</option>
+           <option value="166">166cm</option>
+           <option value="167">167cm</option>
+           <option value="168">168cm</option>
+           <option value="169">169cm</option>
+           <option value="170">170cm</option>
+           <option value="171">171cm</option>
+           <option value="172">172cm</option>
+           <option value="173">173cm</option>
+           <option value="174">174cm</option>
+           <option value="175">175cm</option>
+           <option value="176">176cm</option>
+           <option value="177">177cm</option>
+           <option value="178">178cm</option>
+           <option value="179">179cm</option>
+           <option value="180">180cm以上</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="profile-item type-table">
+      <div>
+        <div class="narrow-cell">
+          <label for="profile habitus">体型</label>
+        </div>
+         <div class="form-select-cell">
+         <select data-js="submit" name="profile habitus" id="profile habitus">
+           <option value="0">未設定</option>
+           <option value="1">スリム</option>
+           <option value="2">やや細め</option>
+           <option value="3">普通</option>
+           <option value="4">グラマー/option>
+           <option value="5">筋肉質</option>
+           <option value="6">ややぽっちゃり</option>
+           <option value="7">太め</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="profile-item type-table">
+      <div>
+        <div class="narrow-cell">
+          <label for="profile education">学歴</label>
+        </div>
+         <div class="form-select-cell">
+         <select data-js="submit" name="profile education" id="profile education">
+           <option value="0">未設定</option>
+           <option value="1">短大・専門・高専卒</option>
+           <option value="2">高校卒</option>
+           <option value="3">大学卒</option>
+           <option value="4">大学院卒</option>
+           <option value="5">その他</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="profile-item type-table">
+      <div>
+        <div class="narrow-cell">
+          <label for="profile income">年収</label>
+        </div>
+         <div class="form-select-cell">
+         <select data-js="submit" name="profile income" id="profile income" class="is-blank">
+           <option selected="selected" value="0">未設定</option>
+           <option value="1">200万円未満</option>
+           <option value="2">200&lrm;～400万円</option>
+           <option value="3">400&lrm;～600万円</option>
+           <option value="4">600&lrm;～800万円</option>
+           <option value="5">800&lrm;～1000万円</option>
+           <option value="6">1000&lrm;～1500万円</option>
+           <option value="7">1500&lrm;～2000万円</option>
+           <option value="8">2000万円以上</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="profile-item type-table">
+      <div>
+        <div class="narrow-cell">
+          <label for="profile holiday">休日</label>
+        </div>
+         <div class="form-select-cell">
+         <select data-js="submit" name="profile holiday" id="profile holiday" class="is-blank">
+           <option selected="selected" value="0">未設定</option>
+           <option value="1">土日</option>
+           <option value="2">平日</option>
+           <option value="3">不定期</option>
+           <option value="4">その他</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </ul>
+  </div>
+
+  <footer>
+  <small>TomoMarry</small>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    function previewFile(file){ //プロフィール画像を追加する要素
+      const preview = document.getElementById("preview");
+      const reader = new FileReader(); //FileReaderオブジェクトを作成
+      reader.onload = function (e) {
+        const imageUrl =e.target.result; //画像のURLはevent.target.resultで呼び出せる
+        const img = document.createElement("img"); //img要素を作成
+        img.src = imageUrl;//画像のURLをimg要素にセット
+        preview.appendChild(img);// #previewの中に追加
+      }
+    reader.readAsDataURL(file); //ファイルを読み込む
+    }
+
+    const fileInput = document.getElementById("example");
+    const handleFileSelect = () => {
+      const files = fileInput.files;
+      for (let i = 0; i < files.length; i++){
+        previewFile(files[i]);
+      }
+    }
+    fileInput.addEventListener("change",handleFileSelect);
+
+    //ページ読み込み時に保存されたデータを表示
+if(localStorage.getItem("memo")){
+  const jsonData = localStorage.getItem("memo");
+  console.log(jsonData);
+  const data =JSON.parse(jsonData);
+  console.log(data);
+  $("#profile_text").text(data.text); //保存した内容を表示
+}
+  </script>
+</body>
+
+</html>
